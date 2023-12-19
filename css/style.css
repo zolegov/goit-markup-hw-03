@@ -91,10 +91,13 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
+  max-width: 496px;
 }
 .hero-btn {
   background-color: #4d5ae5;
+  display: block;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -106,10 +109,18 @@ ul {
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
+}
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .advantages-items {
   display: flex;
@@ -119,7 +130,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  width: calc((100% - 72px) / 4);
 }
 .advantages-item-title,
 .team-item-title,
@@ -129,6 +140,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .advantages-text,
 .team-item-text,
@@ -181,28 +193,35 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-item {
   display: flex;
-  padding-bottom: 32px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
   flex-shrink: 0;
-  margin-bottom: 24px;
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-item-title{
+  margin-bottom: 8px;
 }
 .portfolio-content {
   display: flex;
-  padding: 0px 16px;
+  padding: 32px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
   align-self: stretch;
+  border: 1px solid #e7e9fc;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-logo{
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-studio {
   color: #f4f4fd;
@@ -214,5 +233,4 @@ ul {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   width: 264px;
-  margin-top: 16px;
 }
