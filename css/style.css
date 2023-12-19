@@ -152,6 +152,7 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .team-items {
   display: flex;
   gap: 24px;
@@ -159,8 +160,15 @@ ul {
 .team {
   background-color: #f4f4fd;
 }
+.team-content{
+  padding: 32px 0;
+}
 .team-item-title {
-  margin: 32px 0 8px 0;
+  text-align: center;
+  margin: 8px;
+}
+.team-item-text{
+  text-align: center;
 }
 .team-title,
 .portfolio-title {
@@ -186,9 +194,7 @@ ul {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.team-content {
-  text-align: center;
-}
+ 
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
