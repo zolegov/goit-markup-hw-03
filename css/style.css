@@ -26,6 +26,7 @@ ul {
 .header-item {
   display: flex;
   justify-content: space-between;
+   padding: 24px 0;
 }
 .nav {
   display: flex;
@@ -45,6 +46,8 @@ ul {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
+  display: block;
+   
 }
 .logo-studio {
   color: #2e2f42;
